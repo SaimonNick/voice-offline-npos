@@ -1,0 +1,42 @@
+{
+  "description": "Заменяет стандартную озвучку Максима",
+  "manifest_version": 3,
+  "name": "Voice Offline/NPOS",
+  "version": "1.0",
+
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess",
+    "management"
+  ],
+
+  "host_permissions": [
+    "http://localhost/*",
+    "http://*/pvz*",
+    "https://*.keenetic.name/*",
+    "https://npos.wildberries.ru/*"
+  ],
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "19": "icons/icon19.png",
+    "32": "icons/icon32.png",
+    "38": "icons/icon38.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "web_accessible_resources": [{
+    "resources": ["speech/*"],
+    "matches": ["<all_urls>"]
+  }],
+
+  "background": {
+    "service_worker": "sw.js"
+
+  },
+  "action": {
+
+  }
+}
