@@ -2,12 +2,10 @@
   "description": "Заменяет стандартную озвучку Максима",
   "manifest_version": 3,
   "name": "Voice Offline/NPOS",
-  "version": "1.0",
+  "version": "1.1",
 
   "permissions": [
     "declarativeNetRequest",
-    "declarativeNetRequestFeedback",
-    "declarativeNetRequestWithHostAccess",
     "management"
   ],
 
