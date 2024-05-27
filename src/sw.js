@@ -8,12 +8,11 @@ chrome.runtime.onInstalled.addListener(function () {
             });
 
         } else {
-            console.log('Запуск прерван')
             chrome.action.setBadgeBackgroundColor({
                 color: "red"
             });
             chrome.action.setBadgeText({
-                text: `ERR`
+                text: `!`
             });
         }
     });
