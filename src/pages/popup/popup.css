@@ -75,6 +75,9 @@ body {
     border-radius: 8px;
     margin: 1rem auto 0;
 }
+.icon-container:hover {
+    background-color: rgba(211, 211, 211, 0.18);
+}
 
 .icon-container__button-line {
     display: flex;
