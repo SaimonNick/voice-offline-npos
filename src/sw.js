@@ -28,7 +28,7 @@ chrome.runtime.onInstalled.addListener(async function () {
                     }
                 },
                 condition: {
-                    regexFilter: "^.*/speech/maxim/([1-9]|[1-9][0-9]|[1-2][0-9]{2}|3000)\\.mp3$",
+                    regexFilter: "^.*/speech/maxim/(\\d+)\\.mp3$",
                     resourceTypes: ["media"]
                 }
             },
