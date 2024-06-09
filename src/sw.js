@@ -1,21 +1,5 @@
 chrome.runtime.onInstalled.addListener(async function () {
     try {
-        chrome.management.getAll(function (extensions) {
-            let hasExtension = extensions.some(ext => ext.id === 'oobnbmnbdiollepahbognnihpaomcdpb');
-            if (!hasExtension) {
-                chrome.action.setBadgeText({
-                    text: ``
-                });
-
-            } else {
-                chrome.action.setBadgeBackgroundColor({
-                    color: "red"
-                });
-                chrome.action.setBadgeText({
-                    text: `!`
-                });
-            }
-        });
         await removeDynamicRules([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]);
         await addDynamicRules([
             {
