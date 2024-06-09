@@ -75,9 +75,10 @@ body {
     border-radius: 8px;
     margin: 1rem auto 0;
 }
-.icon-container:hover {
+.icon-container a:hover {
     background-color: rgba(211, 211, 211, 0.18);
 }
+
 
 .icon-container__button-line {
     display: flex;
@@ -86,6 +87,7 @@ body {
     border-radius: 10px;
     color: var(--primary-color);
     text-decoration: none;
+    padding: 4px;
 }
 
 .icon-container__button-line img {
