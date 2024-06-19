@@ -1,6 +1,6 @@
 chrome.runtime.onInstalled.addListener(async function () {
     try {
-        await removeDynamicRules([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]);
+        await removeDynamicRules([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]);
         await addDynamicRules([
             {
                 id: 1,
@@ -407,7 +407,22 @@ chrome.runtime.onInstalled.addListener(async function () {
                     urlFilter: "*://*/speech/maxim/boxAccepted.mp3",
                     resourceTypes: ["media"]
                 }
+            },
+            {
+                id: 30,
+                priority: 1,
+                action: {
+                    type: "redirect",
+                    redirect: {
+                        url: chrome.runtime.getURL('speech/bag.mp3')
+                    }
+                },
+                condition: {
+                    urlFilter: "*://*/speech/maxim/bag.mp3",
+                    resourceTypes: ["media"]
+                }
             }
+
         ]);
 
     } catch (error) {
